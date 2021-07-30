@@ -32,13 +32,13 @@ codesg segment
 	mov bp,ax
 	mov si,0	;dest init
 
-	mov cx,3
+	mov cx,3	;line init
 	
   s0:	pop ax
 	push cx
-	mov cx,23
+	mov cx,23	;rol init
 
-  s1:	mov al,[bx+di]
+  s1:	mov al,[bx+di]	
 	inc di
 	mov es:[bp+28*2+si],ax
 	add si,2
